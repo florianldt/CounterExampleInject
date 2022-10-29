@@ -1,5 +1,5 @@
 import ReSwift
 
-struct AppState: StateType {
+struct AppState {
     var counter: Int = 0
 }

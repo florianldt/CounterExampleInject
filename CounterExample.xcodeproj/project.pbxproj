@@ -3,15 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38284A6C1DD2AD070070068C /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C135C451D53E94C00EC9FC9 /* ReSwift.framework */; };
-		38284A6D1DD2AD070070068C /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C135C451D53E94C00EC9FC9 /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		17C58CD0290D2B5300243CC6 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = 17C58CCF290D2B5300243CC6 /* Inject */; };
+		17C58CD3290D2BF400243CC6 /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 17C58CD2290D2BF400243CC6 /* ReSwift */; };
 		3C135C301D53E29400EC9FC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C135C2F1D53E29400EC9FC9 /* AppDelegate.swift */; };
 		3C135C321D53E29400EC9FC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C135C311D53E29400EC9FC9 /* ViewController.swift */; };
-		3C135C351D53E29400EC9FC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C135C331D53E29400EC9FC9 /* Main.storyboard */; };
 		3C135C371D53E29400EC9FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C135C361D53E29400EC9FC9 /* Assets.xcassets */; };
 		3C135C3A1D53E29400EC9FC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C135C381D53E29400EC9FC9 /* LaunchScreen.storyboard */; };
 		3C135C4C1D53EC0F00EC9FC9 /* Reducers in Resources */ = {isa = PBXBuildFile; fileRef = 3C135C491D53EC0F00EC9FC9 /* Reducers */; };
@@ -30,7 +29,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				38284A6D1DD2AD070070068C /* ReSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,11 +39,9 @@
 		3C135C2C1D53E29400EC9FC9 /* CounterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CounterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C135C2F1D53E29400EC9FC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C135C311D53E29400EC9FC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3C135C341D53E29400EC9FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C135C361D53E29400EC9FC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C135C391D53E29400EC9FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C135C3B1D53E29400EC9FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C135C451D53E94C00EC9FC9 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
 		3C135C491D53EC0F00EC9FC9 /* Reducers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Reducers; path = CounterExample/Reducers; sourceTree = "<absolute>"; };
 		3C135C4A1D53EC0F00EC9FC9 /* State */ = {isa = PBXFileReference; lastKnownFileType = folder; name = State; path = CounterExample/State; sourceTree = "<absolute>"; };
 		3C135C4F1D53EC6600EC9FC9 /* Actions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Actions; path = CounterExample/Actions; sourceTree = "<absolute>"; };
@@ -59,7 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38284A6C1DD2AD070070068C /* ReSwift.framework in Frameworks */,
+				17C58CD0290D2B5300243CC6 /* Inject in Frameworks */,
+				17C58CD3290D2BF400243CC6 /* ReSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +66,6 @@
 		3C135C231D53E29400EC9FC9 = {
 			isa = PBXGroup;
 			children = (
-				3C135C451D53E94C00EC9FC9 /* ReSwift.framework */,
 				3C135C2E1D53E29400EC9FC9 /* CounterExample */,
 				3C135C2D1D53E29400EC9FC9 /* Products */,
 				E35A506E1FAC22280048A7FF /* Recovered References */,
@@ -92,7 +88,6 @@
 				3C135C611D55C90900EC9FC9 /* Actions */,
 				3C135C2F1D53E29400EC9FC9 /* AppDelegate.swift */,
 				3C135C311D53E29400EC9FC9 /* ViewController.swift */,
-				3C135C331D53E29400EC9FC9 /* Main.storyboard */,
 				3C135C361D53E29400EC9FC9 /* Assets.xcassets */,
 				3C135C381D53E29400EC9FC9 /* LaunchScreen.storyboard */,
 				3C135C3B1D53E29400EC9FC9 /* Info.plist */,
@@ -151,6 +146,10 @@
 			dependencies = (
 			);
 			name = CounterExample;
+			packageProductDependencies = (
+				17C58CCF290D2B5300243CC6 /* Inject */,
+				17C58CD2290D2BF400243CC6 /* ReSwift */,
+			);
 			productName = CounterExample;
 			productReference = 3C135C2C1D53E29400EC9FC9 /* CounterExample.app */;
 			productType = "com.apple.product-type.application";
@@ -181,6 +180,10 @@
 				Base,
 			);
 			mainGroup = 3C135C231D53E29400EC9FC9;
+			packageReferences = (
+				17C58CCE290D2B5300243CC6 /* XCRemoteSwiftPackageReference "Inject" */,
+				17C58CD1290D2BF400243CC6 /* XCRemoteSwiftPackageReference "ReSwift" */,
+			);
 			productRefGroup = 3C135C2D1D53E29400EC9FC9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -200,7 +203,6 @@
 				3C135C4D1D53EC0F00EC9FC9 /* State in Resources */,
 				3C135C4C1D53EC0F00EC9FC9 /* Reducers in Resources */,
 				3C135C371D53E29400EC9FC9 /* Assets.xcassets in Resources */,
-				3C135C351D53E29400EC9FC9 /* Main.storyboard in Resources */,
 				3C135C501D53EC6600EC9FC9 /* Actions in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,14 +225,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3C135C331D53E29400EC9FC9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3C135C341D53E29400EC9FC9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3C135C381D53E29400EC9FC9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -344,7 +338,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -360,8 +355,11 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = CounterExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.reswift.CounterExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -379,8 +377,11 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = CounterExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.reswift.CounterExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -410,6 +411,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		17C58CCE290D2B5300243CC6 /* XCRemoteSwiftPackageReference "Inject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		17C58CD1290D2BF400243CC6 /* XCRemoteSwiftPackageReference "ReSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReSwift/ReSwift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		17C58CCF290D2B5300243CC6 /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17C58CCE290D2B5300243CC6 /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
+		};
+		17C58CD2290D2BF400243CC6 /* ReSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17C58CD1290D2BF400243CC6 /* XCRemoteSwiftPackageReference "ReSwift" */;
+			productName = ReSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3C135C241D53E29400EC9FC9 /* Project object */;
 }
